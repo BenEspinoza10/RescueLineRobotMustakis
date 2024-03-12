@@ -10,15 +10,26 @@ BluetoothSerial SerialBT;
 
 
 QTRSensors qtr;
+QTRSensors qtrIzq;
+QTRSensors qtrDer;
 
 const uint8_t SensorCount = 6;
 uint16_t sensorValues[SensorCount];
+uint16_t sensorValuesIzq[1];
+uint16_t sensorValuesDer[1];
 
 void setup() {
   // configure the sensors
   qtr.setTypeAnalog();
-  qtr.setSensorPins((const uint8_t[]){ 25, 33, 32, 35, 34, 36 }, SensorCount);
+  qtr.setSensorPins((const uint8_t[]){25, 33, 32, 35, 34, 39}, SensorCount);  
   qtr.setEmitterPin(27);
+  qtrIzq.setTypeAnalog();
+  qtrIzq.setSensorPins((const uint8_t[]){ 26 }, 1);
+  qtrIzq.setEmitterPin(27);
+  qtrDer.setTypeAnalog();
+  qtrDer.setSensorPins((const uint8_t[]){ 36 }, 1);
+  qtrDer.setEmitterPin(27);
+
 
   Serial.begin(115200);
   SerialBT.begin("RescueLineBot");
@@ -28,18 +39,20 @@ void setup() {
 void loop() {
   // read raw sensor values
   qtr.read(sensorValues);
-  int lecturaIzquierda = analogRead(26);
-  int lecturaDerecha = analogRead(39);
+  qtrIzq.read(sensorValuesIzq);
+  qtrDer.read(sensorValuesDer);
+  //int lecturaIzquierda = analogRead(26);
+  //int lecturaDerecha = analogRead(36);
 
   // print the sensor values as numbers from 0 to 1023, where 0 means maximum
   // reflectance and 1023 means minimum reflectance
+  SerialBT.print(sensorValuesIzq[0]);
+  SerialBT.print('\t');
   for (uint8_t i = 0; i < SensorCount; i++) {
     SerialBT.print(sensorValues[i]);
     SerialBT.print('\t');
   }
-  SerialBT.print("||||");
-  SerialBT.print(lecturaIzquierda);
-  SerialBT.print('\t');
-  SerialBT.println(lecturaDerecha);
+  
+  SerialBT.println(sensorValuesDer[0]);
   delay(250);
 }

@@ -1,10 +1,10 @@
-#define AIN1 14
-#define AIN2 13
-#define PWMA 19
+#define AIN1 17
+#define AIN2 16
+#define PWMA 4
 
-#define BIN1 4
-#define BIN2 5
-#define PWMB 18
+#define BIN1 5
+#define BIN2 18
+#define PWMB 19
 
 const int freq = 5000;
 const int resolution = 8;
@@ -53,10 +53,10 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  Motor(100,100);
+  Motor(255,255);
   delay(1000);
-  Motor(-100,-100);
+  Motor(-255,-255);
   delay(1000);
-  Motor(0,100);
+  Motor(0,255);
   delay(1500);
 }

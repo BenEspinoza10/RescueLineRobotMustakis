@@ -5,316 +5,6 @@
 	(uuid "08dd59d3-3158-43a6-a3e1-925f8e86ce81")
 	(paper "A4")
 	(lib_symbols
-		(symbol "200MSP1T2B4M2QE:200MSP1T2B4M2QE"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "S"
-				(at -2.54 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "200MSP1T2B4M2QE"
-				(at -2.54 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "200MSP1T2B4M2QE:SW_200MSP1T2B4M2QE"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "E-Switch"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "23.64 mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Package" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/200MSP1T2B4M2QE/E-Switch/view-part/?ref=eda"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "STANDARD" "Manufacturer Recommendations"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "PARTREV" "A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/200MSP1T2B4M2QE/E-Switch/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "200MSP1T2B4M2QE"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "\nToggle Switch, 200 Series, SPDT, ON-NONE-ON, Sealed, 3A, 120VAC, 28VDC, PC Pin | E-Switch 200MSP1T2B4M2QE\n"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER" "E-switch"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SNAPEDA_PN" "200MSP3T1B1M2QEH"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "200MSP1T2B4M2QE_0_0"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -5.08 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0) (xy 2.794 2.1336)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -2.54) (xy 2.921 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 2.921 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 -2.54)
-					(radius 0.3302)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 2.54)
-					(radius 0.3302)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016) hide)
@@ -2431,12 +2121,6 @@
 		(uuid "33ad7d59-e823-4fb6-8d0f-cc09658d82c5")
 	)
 	(junction
-		(at 40.64 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "40e03129-3105-40af-96c0-0aeb30f57e5f")
-	)
-	(junction
 		(at 107.95 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2471,6 +2155,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "93aefc3e-ac7d-4bb9-b1f4-433cc4db3224")
+	)
+	(junction
+		(at 40.64 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b5f29abe-2338-48ec-a598-a3ebf1bf9163")
 	)
 	(junction
 		(at 143.51 97.79)
@@ -2515,6 +2205,17 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 62.23) (xy 45.72 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 119 48 146 1)
+		)
+		(uuid "0385d92c-4245-40ec-b043-76a77a9c05c6")
+	)
+	(wire
+		(pts
 			(xy 90.17 77.47) (xy 85.09 77.47)
 		)
 		(stroke
@@ -2544,17 +2245,6 @@
 			(type default)
 		)
 		(uuid "1333d121-9c93-4209-80ae-6ce3a9d7715c")
-	)
-	(wire
-		(pts
-			(xy 41.91 59.69) (xy 54.61 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 119 48 146 1)
-		)
-		(uuid "14328437-7765-42fd-aa3a-74aec42c380b")
 	)
 	(wire
 		(pts
@@ -2674,6 +2364,17 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 62.23) (xy 41.91 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 119 48 146 1)
+		)
+		(uuid "2362ba58-9df6-4058-adfa-178f46ecf063")
+	)
+	(wire
+		(pts
 			(xy 105.41 59.69) (xy 105.41 67.31)
 		)
 		(stroke
@@ -2704,6 +2405,17 @@
 			(color 7 0 255 1)
 		)
 		(uuid "25d55020-94cd-4069-aa06-69dde8824af7")
+	)
+	(wire
+		(pts
+			(xy 67.31 123.19) (xy 52.07 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 6 1)
+		)
+		(uuid "26ada815-95e2-42be-aba8-fe869aabc24e")
 	)
 	(wire
 		(pts
@@ -2887,6 +2599,17 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 105.41) (xy 45.72 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "474b61ab-2eaa-48c5-94ff-79abd938bbc7")
+	)
+	(wire
+		(pts
 			(xy 143.51 106.68) (xy 143.51 124.46)
 		)
 		(stroke
@@ -2906,6 +2629,17 @@
 			(color 0 0 0 1)
 		)
 		(uuid "50bbfa10-7612-475e-be1a-6bc584d7cfbb")
+	)
+	(wire
+		(pts
+			(xy 48.26 62.23) (xy 48.26 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 119 48 146 1)
+		)
+		(uuid "51346f8e-4a56-4ca5-93bd-1dfb7d8c645f")
 	)
 	(wire
 		(pts
@@ -2942,7 +2676,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 116.84) (xy 52.07 116.84)
+			(xy 43.18 116.84) (xy 52.07 116.84)
 		)
 		(stroke
 			(width 0)
@@ -2975,6 +2709,17 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 100.33) (xy 45.72 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 6 1)
+		)
+		(uuid "5bb3cc98-c334-475f-8376-e535db11488d")
+	)
+	(wire
+		(pts
 			(xy 152.4 114.3) (xy 152.4 129.54)
 		)
 		(stroke
@@ -2994,6 +2739,17 @@
 			(color 0 0 0 1)
 		)
 		(uuid "5f11269e-54d8-497e-9f0d-15585fbe4ec7")
+	)
+	(wire
+		(pts
+			(xy 48.26 58.42) (xy 41.91 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 119 48 146 1)
+		)
+		(uuid "60bae7ba-cb9f-4aea-95ac-5bf2ff3cf9b8")
 	)
 	(wire
 		(pts
@@ -3126,6 +2882,17 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 58.42) (xy 41.91 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 119 48 146 1)
+		)
+		(uuid "76e39b97-dfbf-4380-81ef-dfccc8aad81a")
+	)
+	(wire
+		(pts
 			(xy 171.45 74.93) (xy 148.59 74.93)
 		)
 		(stroke
@@ -3147,6 +2914,17 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 119.38) (xy 67.31 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 6 1)
+		)
+		(uuid "7928e91b-a386-44de-8060-b0661fee674a")
+	)
+	(wire
+		(pts
 			(xy 146.05 74.93) (xy 139.7 74.93)
 		)
 		(stroke
@@ -3154,6 +2932,17 @@
 			(type default)
 		)
 		(uuid "7a658e71-e585-4cc2-a951-c473d123aff6")
+	)
+	(wire
+		(pts
+			(xy 40.64 100.33) (xy 40.64 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "7bc1c5c6-d33f-47d7-a532-eaa2167790a4")
 	)
 	(wire
 		(pts
@@ -3513,7 +3302,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 62.23) (xy 41.91 62.23)
+			(xy 54.61 62.23) (xy 48.26 62.23)
 		)
 		(stroke
 			(width 0)
@@ -3590,6 +3379,17 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 59.69) (xy 54.61 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 119 48 146 1)
+		)
+		(uuid "c00dac87-09e9-48a2-a6dc-93e3cf75635d")
+	)
+	(wire
+		(pts
 			(xy 90.17 72.39) (xy 90.17 77.47)
 		)
 		(stroke
@@ -3620,17 +3420,6 @@
 			(color 255 0 9 1)
 		)
 		(uuid "c3b7716c-a874-4927-a731-42548d4f16be")
-	)
-	(wire
-		(pts
-			(xy 40.64 100.33) (xy 45.72 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "c5f176a5-2129-4615-824f-adad7160df29")
 	)
 	(wire
 		(pts
@@ -3759,6 +3548,17 @@
 			(color 255 0 9 1)
 		)
 		(uuid "d88eb5e8-332b-49e2-bacf-9a7d50179f75")
+	)
+	(wire
+		(pts
+			(xy 52.07 123.19) (xy 52.07 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 6 1)
+		)
+		(uuid "d90ce569-f570-41a5-a1e2-86a18d46b9ad")
 	)
 	(wire
 		(pts
@@ -3912,14 +3712,14 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 102.87) (xy 45.72 116.84)
+			(xy 43.18 116.84) (xy 43.18 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 			(color 255 0 6 1)
 		)
-		(uuid "f477a31f-6464-416c-bcdf-ddd601ca2bf5")
+		(uuid "ee24de8d-e890-464d-a63b-3489921e7fca")
 	)
 	(wire
 		(pts
@@ -4342,6 +4142,79 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
+		(at 50.8 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b0dcf0b-d6fc-4c66-bf63-b167c6d70999")
+		(property "Reference" "J9"
+			(at 53.34 101.5999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Bateria"
+			(at 53.34 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
+			(at 50.8 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 50.8 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d065fda9-79b3-4960-b884-b2ce4301bf9d")
+		)
+		(pin "3"
+			(uuid "f1c0b3f8-7c1e-4d30-8c1a-8ddc2830cb7e")
+		)
+		(pin "1"
+			(uuid "4c390aef-afd6-4197-8da8-f2db76525093")
+		)
+		(instances
+			(project "RescueLineRobot"
+				(path "/08dd59d3-3158-43a6-a3e1-925f8e86ce81"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
 		(at 83.82 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4635,6 +4508,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 57.15 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bebb61e6-c404-4cad-a5d3-b27120929762")
+		(property "Reference" "J2"
+			(at 59.69 115.5699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Switch"
+			(at 59.69 118.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
+			(at 57.15 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 57.15 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "c8bdab17-c9ab-45e5-870e-754cb2d1ffb0")
+		)
+		(pin "1"
+			(uuid "bd489c93-9702-4848-bd22-adbecbf58e1f")
+		)
+		(pin "2"
+			(uuid "c0718b44-460e-4be1-858d-74499cc9d29a")
+		)
+		(instances
+			(project "RescueLineRobot"
+				(path "/08dd59d3-3158-43a6-a3e1-925f8e86ce81"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ESP32-DEVKIT-V1:ESP32-DEVKIT-V1")
 		(at 124.46 72.39 0)
 		(unit 1)
@@ -4908,76 +4854,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 50.8 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cda30b8b-cfaf-42e8-b748-d20bb2f9249b")
-		(property "Reference" "J2"
-			(at 53.34 100.3299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Bateria"
-			(at 53.34 102.8699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 50.8 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 50.8 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4356b1d4-ce7f-4469-9ba4-eef1c2ba2ab5")
-		)
-		(pin "1"
-			(uuid "d020db5c-be99-44fb-b5b3-318f27d6fd0a")
-		)
-		(instances
-			(project "RescueLineRobot"
-				(path "/08dd59d3-3158-43a6-a3e1-925f8e86ce81"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x11")
 		(at 176.53 72.39 0)
 		(unit 1)
@@ -5069,208 +4945,6 @@
 			(project "RescueLineRobot"
 				(path "/08dd59d3-3158-43a6-a3e1-925f8e86ce81"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "200MSP1T2B4M2QE:200MSP1T2B4M2QE")
-		(at 59.69 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d8054e2f-7270-4f05-bbb1-5e71b332593a")
-		(property "Reference" "S1"
-			(at 59.69 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "200MSP1T2B4M2QE"
-			(at 59.69 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "200MSP1T2B4M2QE:SW_200MSP1T2B4M2QE"
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "E-Switch"
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "23.64 mm"
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "None"
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/200MSP1T2B4M2QE/E-Switch/view-part/?ref=eda"
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "A"
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/200MSP1T2B4M2QE/E-Switch/view-part/?ref=snap"
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "200MSP1T2B4M2QE"
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "\nToggle Switch, 200 Series, SPDT, ON-NONE-ON, Sealed, 3A, 120VAC, 28VDC, PC Pin | E-Switch 200MSP1T2B4M2QE\n"
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "E-switch"
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SNAPEDA_PN" "200MSP3T1B1M2QEH"
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "382a075d-360c-4a6a-beed-7fd949272301")
-		)
-		(pin "1"
-			(uuid "dbdce81f-9771-4936-9dfd-1adcccc1efd3")
-		)
-		(pin "3"
-			(uuid "8ba92f45-59b9-40f2-8a9d-952b136626f5")
-		)
-		(instances
-			(project "RescueLineRobot"
-				(path "/08dd59d3-3158-43a6-a3e1-925f8e86ce81"
-					(reference "S1")
 					(unit 1)
 				)
 			)

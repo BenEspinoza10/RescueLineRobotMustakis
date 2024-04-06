@@ -1,5 +1,5 @@
-#define AIN1 17
-#define AIN2 16
+#define AIN1 16
+#define AIN2 17
 #define PWMA 4
 
 #define BIN1 5
@@ -53,10 +53,10 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  Motor(255,255);
+  Motor(150,150);
   delay(1000);
-  Motor(-255,-255);
+  Motor(-150,-150);
   delay(1000);
-  Motor(0,255);
+  Motor(0,150);
   delay(1500);
 }

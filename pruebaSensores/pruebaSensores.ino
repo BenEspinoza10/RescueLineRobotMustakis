@@ -18,19 +18,31 @@ uint16_t sensorValues[SensorCount];
 uint16_t sensorValuesIzq[1];
 uint16_t sensorValuesDer[1];
 
+#define LED 2
+
 void setup() {
   // configure the sensors
+  //siguelineas
   qtr.setTypeAnalog();
-  qtr.setSensorPins((const uint8_t[]){25, 33, 32, 35, 34, 39}, SensorCount);  
+  qtr.setSensorPins((const uint8_t[]){ 25, 33, 32, 35, 34, 39 }, SensorCount);
   qtr.setEmitterPin(27);
+  //sensor izquierdo
   qtrIzq.setTypeAnalog();
   qtrIzq.setSensorPins((const uint8_t[]){ 26 }, 1);
   qtrIzq.setEmitterPin(27);
+  //sensor derecho
   qtrDer.setTypeAnalog();
   qtrDer.setSensorPins((const uint8_t[]){ 36 }, 1);
   qtrDer.setEmitterPin(27);
+  pinMode(LED,OUTPUT);
 
-
+  for (int i = 0; i < 200; i++) {
+    qtr.calibrate();
+    digitalWrite(LED, HIGH);
+    delay(10);
+    digitalWrite(LED, LOW);
+    delay(10);
+  }
   Serial.begin(115200);
   SerialBT.begin("RescueLineBot");
 }
@@ -39,6 +51,11 @@ void setup() {
 void loop() {
   // read raw sensor values
   qtr.read(sensorValues);
+  /*
+  int posicion = qtr.readLineBlack(sensorValues);
+  posicion = map(posicion,0,5000,-255,255);
+  Serial.println(posicion);
+  */
   qtrIzq.read(sensorValuesIzq);
   qtrDer.read(sensorValuesDer);
   //int lecturaIzquierda = analogRead(26);
@@ -46,13 +63,12 @@ void loop() {
 
   // print the sensor values as numbers from 0 to 1023, where 0 means maximum
   // reflectance and 1023 means minimum reflectance
-  SerialBT.print(sensorValuesIzq[0]);
-  SerialBT.print('\t');
+  Serial.print(sensorValuesIzq[0]);
+  Serial.print('\t');
   for (uint8_t i = 0; i < SensorCount; i++) {
-    SerialBT.print(sensorValues[i]);
-    SerialBT.print('\t');
+    Serial.print(sensorValues[i]);
+    Serial.print('\t');
   }
-  
-  SerialBT.println(sensorValuesDer[0]);
-  delay(250);
+  Serial.println(sensorValuesDer[0]);
+  delay(100);
 }

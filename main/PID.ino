@@ -28,5 +28,5 @@ void pid(float vel_base, int lim, float KP, float KI, float KD, int inflim) {
   SerialBT.print(velizq);
   SerialBT.print("  ");
   SerialBT.println(velder);      
-  //mover(velizq, velder);
+  mover(velizq, velder);
 }

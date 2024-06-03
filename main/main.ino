@@ -16,7 +16,7 @@ uint16_t sensorValuesIzq[1];
 uint16_t sensorValuesDer[1];
 
 //pwm
-const int freq = 5000;
+const int freq = 15000;
 const int resolution = 8;
 
 //-----------------Variables PID----------------------------//
@@ -46,28 +46,19 @@ void setup() {
   setupMotores();
   setupSensores();
   calibrar();
-  
-
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // put your main code here, to run repeatedly:  
   int estado = verificarCaso();  
   if (estado == 0){ //normal
-    pid(30, 150, 0.2, 0, 0, -1);
+    pid(30, 250, 0.1, 0, 40, -1); 
   }else if (estado == 1){//interseccion
     mover(0,0);
+    delay(1000);
+    mover(30,30);
+    delay(500);
+  }else if (estado == 2){
+    mover(30,30);
   }
-  
-  /*
-  int estado = verificarCasos();
-  if (estado == algo){
-    if (gap){
-      //hacer codigo del gap
-    }else if(interseccion){
-      //hacer codigo de la interseccion
-    }
-  }else{
-    pid();
-  }*/
 }

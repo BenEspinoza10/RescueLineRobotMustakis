@@ -51,11 +51,11 @@ void setup() {
 void loop() {
   // read raw sensor values
   qtr.read(sensorValues);
-  /*
+  
   int posicion = qtr.readLineBlack(sensorValues);
   posicion = map(posicion,0,5000,-255,255);
-  Serial.println(posicion);
-  */
+  Serial.print(posicion);
+  Serial.print('\t');
   qtrIzq.read(sensorValuesIzq);
   qtrDer.read(sensorValuesDer);
   //int lecturaIzquierda = analogRead(26);
@@ -69,6 +69,5 @@ void loop() {
     Serial.print(sensorValues[i]);
     Serial.print('\t');
   }
-  Serial.println(sensorValuesDer[0]);
-  delay(100);
+  Serial.println(sensorValuesDer[0]);  
 }

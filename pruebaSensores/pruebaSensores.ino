@@ -47,6 +47,5 @@ void loop() {
   int posicion = qtr.readLineBlack(sensorValues);
   posicion = map(posicion,0,7000,-255,255);
   Serial.print(posicion);
-  Serial.println('\t');
-  
+  Serial.println('\t');  
 }

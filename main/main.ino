@@ -7,13 +7,9 @@
 //VARIBLES
 //sensores
 QTRSensors qtr;
-QTRSensors qtrIzq;
-QTRSensors qtrDer;
 
-const uint8_t SensorCount = 6;
+const uint8_t SensorCount = 8;
 uint16_t sensorValues[SensorCount];
-uint16_t sensorValuesIzq[1];
-uint16_t sensorValuesDer[1];
 
 //pwm
 const int freq = 15000;

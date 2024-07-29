@@ -11,7 +11,7 @@ BluetoothSerial SerialBT;
 
 QTRSensors qtr;
 
-const uint8_t SensorCount = 6;
+const uint8_t SensorCount = 8;
 uint16_t sensorValues[SensorCount];
 
 //-------------------Definición motores------------------------//
@@ -52,7 +52,7 @@ void setup() {
   ledcAttachPin(PWMA, 0);
   //Seteo sensores
   qtr.setTypeAnalog();
-  qtr.setSensorPins((const uint8_t[]){ 25, 33, 32, 35, 34, 36 }, SensorCount);
+  qtr.setSensorPins((const uint8_t[]){ 26,25, 33, 32, 35, 34, 36,39 }, SensorCount);
   qtr.setEmitterPin(27);
 
   Serial.begin(115200);

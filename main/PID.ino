@@ -1,6 +1,6 @@
 void pid(float vel_base, int lim, float KP, float KI, float KD, int inflim) {
   int posicion = qtr.readLineBlack(sensorValues);
-  posicion = map(posicion, 0, 5000, -255, 255);  
+  posicion = map(posicion, 0, 7000, -255, 255);  
   proportional = posicion - ref;
   derivative = proportional - last_proportional;
   last_proportional = proportional;

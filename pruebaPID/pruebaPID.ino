@@ -65,5 +65,5 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  seguir_linea(60, 170, 1.02, 0, 10.75, 170);
+  seguir_linea(60, 170, 1.02, 0, 10.75, 0);
 }

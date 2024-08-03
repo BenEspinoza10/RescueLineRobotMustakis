@@ -11,11 +11,11 @@ const int resolution = 8;
 
 void Motoriz(int value) {
   if ( value >= 0 ) {
-    digitalWrite(BIN1, HIGH);
-    digitalWrite(BIN2, LOW);
-  } else {
     digitalWrite(BIN1, LOW);
     digitalWrite(BIN2, HIGH);
+  } else {
+    digitalWrite(BIN1, HIGH);
+    digitalWrite(BIN2, LOW);
     value *= -1;
   }
   ledcWrite(0, value);
@@ -53,10 +53,11 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  Motor(-150,150);
+  Motor(150,150);
+  /*Motor(-150,150);
   delay(1000);
   Motor(0,0);
   delay(1000);
   Motor(150,-150);
-  delay(1000);
+  delay(1000);*/
 }

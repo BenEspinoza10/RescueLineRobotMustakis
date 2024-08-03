@@ -16,13 +16,13 @@ uint16_t sensorValues[SensorCount];
 
 //-------------------Definición motores------------------------//
 
-#define AIN1 14
-#define AIN2 13
-#define PWMA 19
+#define AIN1 16
+#define AIN2 17
+#define PWMA 4
 
-#define BIN1 4
-#define BIN2 5
-#define PWMB 18
+#define BIN1 5
+#define BIN2 18
+#define PWMB 19
 
 const int freq = 5000;
 const int resolution = 8;

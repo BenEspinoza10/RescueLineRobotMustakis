@@ -1,5 +1,5 @@
 void seguir_linea(float vel_base, int lim, float KP, float KI, float KD, int inflim) {
-  int posicion = qtr.readLineWhite(sensorValues);
+  int posicion = qtr.readLineBlack(sensorValues);
   posicion = map(posicion, 0, 7000, -255, 255);
   //SerialBT.println(posicion);
   proportional = posicion - ref;

@@ -13,6 +13,7 @@ QTRSensors qtr;
 
 const uint8_t SensorCount = 8;
 uint16_t sensorValues[SensorCount];
+uint16_t sensorUmbrales[SensorCount];
 
 //-------------------Definición motores------------------------//
 
@@ -56,11 +57,17 @@ void setup() {
   qtr.setEmitterPin(27);
 
   Serial.begin(115200);
-  SerialBT.begin("RescueLineBot");
+  SerialBT.begin("RescueLineBot");4
 
   for (uint16_t i = 0; i < 100; i++) {
     qtr.calibrate();
   }
+  for (int i =0 ;i<SensorCount;i++){
+    sensorUmbrales[i] = (qtr.calibrationOn.minimum[i]+ qtr.calibrationOn.maximum[i])/2;
+  }
+
+
+  if (sensorValues [0]>sensorUmbrales[0])
 }
 
 void loop() {

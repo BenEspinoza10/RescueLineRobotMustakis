@@ -53,7 +53,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  Motor(0,150);
+  Motor(50,50);
   /*Motor(-150,150);
   delay(1000);
   Motor(0,0);

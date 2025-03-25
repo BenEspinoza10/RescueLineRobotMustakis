@@ -11,7 +11,7 @@ BluetoothSerial SerialBT;
 
 QTRSensors qtr;
 
-const uint8_t SensorCount = 6;
+const uint8_t SensorCount = 8;
 uint16_t sensorValues[SensorCount];
 
 
@@ -21,9 +21,9 @@ void setup() {
   // configure the sensors
   //siguelineas
   qtr.setTypeAnalog();
-  qtr.setSensorPins((const uint8_t[]){ 26,25, 33, 32, 35, 34, 39, 36}, SensorCount);
-  qtr.setEmitterPin(27);  
-  pinMode(LED,OUTPUT);
+  qtr.setSensorPins((const uint8_t[]){ 36, 39, 34, 35, 32, 33, 25, 26 }, SensorCount);
+  qtr.setEmitterPin(27);
+  pinMode(LED, OUTPUT);
 
   for (int i = 0; i < 200; i++) {
     qtr.calibrate();
@@ -45,7 +45,7 @@ void loop() {
     Serial.print('\t');
   }
   int posicion = qtr.readLineBlack(sensorValues);
-  posicion = map(posicion,0,7000,-255,255);
+  posicion = map(posicion, 0, 7000, -255, 255);
   Serial.print(posicion);
-  Serial.println('\t');  
+  Serial.println('\t');
 }

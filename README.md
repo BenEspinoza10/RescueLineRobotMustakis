@@ -1,5 +1,5 @@
 # Club Robótica Linea Rescue Line
-Este es el repositorio de la línea de robótica Rescue Line para el segundo semestre. Aquí encontrás todo lo necesario para ejecutar las sesiones de manera exitosa.
+Este es el repositorio de la línea de robótica Rescue Line Aquí encontrás todo lo necesario para ejecutar las sesiones de manera exitosa.
 
 ## Sesiones
 - Las presentaciones PPT por sesión se pueden encontrar en el siguiente link: [Presentaciones]([https://drive.google.com/drive/folders/1f29RZuSRP2YF10bKm0zEQ3D0O8kv1Jhs?usp=sharing](https://drive.google.com/drive/folders/1yaTiIentO2E4K6rHl-2EgRlo6wr0wR3-?usp=drive_link))

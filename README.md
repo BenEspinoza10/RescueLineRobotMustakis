@@ -2,7 +2,7 @@
 Este es el repositorio de la línea de robótica Rescue Line para el segundo semestre. Aquí encontrás todo lo necesario para ejecutar las sesiones de manera exitosa.
 
 ## Sesiones
-- Las presentaciones PPT por sesión se pueden encontrar en el siguiente link: [Presentaciones](https://drive.google.com/drive/folders/1f29RZuSRP2YF10bKm0zEQ3D0O8kv1Jhs?usp=sharing)
+- Las presentaciones PPT por sesión se pueden encontrar en el siguiente link: [Presentaciones]([https://drive.google.com/drive/folders/1f29RZuSRP2YF10bKm0zEQ3D0O8kv1Jhs?usp=sharing](https://drive.google.com/drive/folders/1yaTiIentO2E4K6rHl-2EgRlo6wr0wR3-?usp=drive_link))
 
 ## Archivos de construcción
 En la carpeta archivos de construcción se pueden encontrar los modelos 3D, svg y el Gerber de Dynamis

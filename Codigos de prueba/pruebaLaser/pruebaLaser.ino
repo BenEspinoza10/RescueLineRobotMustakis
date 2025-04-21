@@ -2,6 +2,8 @@
 
 Adafruit_VL53L0X lox1 = Adafruit_VL53L0X();
 
+#define BOTON 12
+
 void setup() {
   Serial.begin(115200);
 
@@ -17,6 +19,8 @@ void setup() {
   }
   // power 
   Serial.println(F("VL53L0X API Simple Ranging example\n\n")); 
+  while (digitalRead(BOTON) == 0) {
+  }
 }
 
 
@@ -28,7 +32,7 @@ void loop() {
   lox1.rangingTest(&measure1, false); // pass in 'true' to get debug data printout!
 
   if (measure1.RangeStatus != 4) {  // phase failures have incorrect data
-    Serial.print("Distance 1(mm): "); Serial.print(measure1.RangeMilliMeter);
+    Serial.print("Distance (mm): "); Serial.println(measure1.RangeMilliMeter);
   } else {
     Serial.println(" out of range ");
   }

@@ -6,6 +6,8 @@
 #define BIN2 18
 #define PWMB 19
 
+#define BOTON 12
+
 const int freq = 5000;
 const int resolution = 8;
 
@@ -48,12 +50,13 @@ void setup() {
   pinMode(AIN2  , OUTPUT);
   ledcSetup(0, freq, resolution);
   ledcAttachPin(PWMA, 0);
-  
+  while (digitalRead(BOTON) == 0) {
+  }
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  Motor(50,50);
+  Motor(255,255);
   /*Motor(-150,150);
   delay(1000);
   Motor(0,0);

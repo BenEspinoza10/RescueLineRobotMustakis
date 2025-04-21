@@ -2,18 +2,18 @@
 
 #include <BluetoothSerial.h>
 
+#define BOTON 12
+
 #if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
 #error Bluetooth is not enabled! Please run `make menuconfig` to and enable it
 #endif
 
 BluetoothSerial SerialBT;
 
-
 QTRSensors qtr;
 
 const uint8_t SensorCount = 8;
 uint16_t sensorValues[SensorCount];
-
 
 #define LED 2
 
@@ -34,8 +34,10 @@ void setup() {
   }
   Serial.begin(115200);
   SerialBT.begin("RescueLineBot");
-}
 
+  while (digitalRead(BOTON) == 0) {
+  }
+}
 
 void loop() {
   // read raw sensor values

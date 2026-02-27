@@ -79,7 +79,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "../../../../Desktop/Robot Rescue Line/GerberDynamis")
+			(outputdirectory "../Archivos de construccion/GerberDynamisV2/")
 		)
 	)
 	(net 0 "")

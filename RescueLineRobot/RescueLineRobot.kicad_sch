@@ -4974,7 +4974,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38e6c0b8-d26f-4bf6-80f6-bf98f89d4449")
-		(property "Reference" "I2C4"
+		(property "Reference" "I2C1"
 			(at 177.8 109.2199 0)
 			(effects
 				(font
@@ -5034,7 +5034,7 @@
 		(instances
 			(project "RescueLineRobot"
 				(path "/08dd59d3-3158-43a6-a3e1-925f8e86ce81"
-					(reference "I2C4")
+					(reference "I2C1")
 					(unit 1)
 				)
 			)
@@ -5712,7 +5712,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91e73762-7424-4d58-b6e0-efe89552397f")
-		(property "Reference" "I2C1"
+		(property "Reference" "I2C4"
 			(at 220.98 100.33 0)
 			(effects
 				(font
@@ -5782,7 +5782,7 @@
 		(instances
 			(project "RescueLineRobot"
 				(path "/08dd59d3-3158-43a6-a3e1-925f8e86ce81"
-					(reference "I2C1")
+					(reference "I2C4")
 					(unit 1)
 				)
 			)

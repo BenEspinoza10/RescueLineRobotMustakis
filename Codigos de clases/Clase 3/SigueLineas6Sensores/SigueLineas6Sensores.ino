@@ -20,7 +20,7 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  //Siguelínea simple, el caso gap es detenerse y la intersección es avanzar (es completamente arbitrario)
 
   //B,B,B,B,B,B - (0,0)
   //N,N,B,B,B,B - (100,0)

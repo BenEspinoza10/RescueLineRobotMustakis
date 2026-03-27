@@ -42,6 +42,7 @@ void Motor(int left, int righ) {
 }
 void setup() {
   // put your setup code here, to run once:
+  Serial.begin(115200);
   pinMode(BIN2  , OUTPUT);
   pinMode(BIN1  , OUTPUT);
   ledcSetup(1, freq, resolution);
@@ -50,6 +51,7 @@ void setup() {
   pinMode(AIN2  , OUTPUT);
   ledcSetup(0, freq, resolution);
   ledcAttachPin(PWMA, 0);
+  Serial.println("Presiona el boton para mover los motores");
   while (digitalRead(BOTON) == 0) {
   }
 }
@@ -57,6 +59,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   Motor(255,255);
+  Serial.println("Moviendo ruedas");
   /*Motor(-150,150);
   delay(1000);
   Motor(0,0);

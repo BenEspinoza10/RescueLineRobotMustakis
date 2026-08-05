@@ -21,8 +21,6 @@ void setup(void) {
     Serial.println("No TCS34725 found ... check your connections");
     while (1);
   }
-
-  // Now we're ready to get readings!
 }
 
 void loop(void) {

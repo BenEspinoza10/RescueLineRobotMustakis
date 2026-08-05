@@ -6,13 +6,13 @@
 // ============================================================
 
 // ---------- Hiperparámetros ---------------------------------
-#define INPUT_SIZE   3
-#define HIDDEN1_SIZE 6
-#define HIDDEN2_SIZE 4
-#define OUTPUT_SIZE  1
+#define INPUT_SIZE 3
+#define HIDDEN1_SIZE 4
+#define HIDDEN2_SIZE 6
+#define OUTPUT_SIZE 1
 #define LEARNING_RATE 0.05f
-#define EPOCHS        2000
-#define PRINT_EVERY   200   // Imprime loss cada N épocas
+#define EPOCHS 2000
+#define PRINT_EVERY 200  // Imprime loss cada N épocas
 
 // ---------- Pesos y biases ----------------------------------
 // Capa 1: INPUT → HIDDEN1
@@ -26,9 +26,9 @@ float w3[HIDDEN2_SIZE][OUTPUT_SIZE];
 float b3[OUTPUT_SIZE];
 
 // ---------- Activaciones (forward pass) ---------------------
-float a1[HIDDEN1_SIZE];   // salida capa oculta 1
-float a2[HIDDEN2_SIZE];   // salida capa oculta 2
-float a3[OUTPUT_SIZE];    // salida final
+float a1[HIDDEN1_SIZE];  // salida capa oculta 1
+float a2[HIDDEN2_SIZE];  // salida capa oculta 2
+float a3[OUTPUT_SIZE];   // salida final
 
 // ---------- Gradientes (backward pass) ----------------------
 float d3[OUTPUT_SIZE];
@@ -41,36 +41,42 @@ float d1[HIDDEN1_SIZE];
 // Ajusta o amplía este dataset según tu sensor / necesidades
 const float X[][3] = {
   // ---- Verdes ----
-  {0.00f, 1.00f, 0.00f},   // verde puro
-  {0.13f, 0.55f, 0.13f},   // forest green
-  {0.24f, 0.70f, 0.44f},   // medium sea green
-  {0.56f, 0.93f, 0.56f},   // pale green
-  {0.00f, 0.50f, 0.00f},   // dark green
-  {0.60f, 0.98f, 0.60f},   // honeydew-ish
-  {0.20f, 0.80f, 0.20f},   // lime-ish
-  {0.18f, 0.55f, 0.34f},   // sea green
+  { 0.00f, 1.00f, 0.00f },  // verde puro
+  { 0.13f, 0.55f, 0.13f },  // forest green
+  { 0.24f, 0.70f, 0.44f },  // medium sea green
+  { 0.56f, 0.93f, 0.56f },  // pale green
+  { 0.00f, 0.50f, 0.00f },  // dark green
+  { 0.60f, 0.98f, 0.60f },  // honeydew-ish
+  { 0.20f, 0.80f, 0.20f },  // lime-ish
+  { 0.18f, 0.55f, 0.34f },  // sea green
   // ---- No verdes ----
-  {1.00f, 0.00f, 0.00f},   // rojo
-  {0.00f, 0.00f, 1.00f},   // azul
-  {1.00f, 1.00f, 0.00f},   // amarillo
-  {1.00f, 0.65f, 0.00f},   // naranja
-  {0.50f, 0.00f, 0.50f},   // morado
-  {1.00f, 1.00f, 1.00f},   // blanco
-  {0.00f, 0.00f, 0.00f},   // negro
-  {0.50f, 0.50f, 0.50f},   // gris
+  { 1.00f, 0.00f, 0.00f },  // rojo
+  { 0.00f, 0.00f, 1.00f },  // azul
+  { 1.00f, 1.00f, 0.00f },  // amarillo
+  { 1.00f, 0.65f, 0.00f },  // naranja
+  { 0.50f, 0.00f, 0.50f },  // morado
+  { 1.00f, 1.00f, 1.00f },  // blanco
+  { 0.00f, 0.00f, 0.00f },  // negro
+  { 0.50f, 0.50f, 0.50f },  // gris
 };
 const float Y[] = {
-  1,1,1,1,1,1,1,1,   // verdes
-  0,0,0,0,0,0,0,0    // no verdes
+  1, 1, 1, 1, 1, 1, 1, 1,  // verdes
+  0, 0, 0, 0, 0, 0, 0, 0   // no verdes
 };
 const int N_SAMPLES = sizeof(Y) / sizeof(Y[0]);
 
 // ============================================================
 //  Funciones de activación
 // ============================================================
-float relu(float x)    { return x > 0.0f ? x : 0.0f; }
-float relu_d(float x)  { return x > 0.0f ? 1.0f : 0.0f; }
-float sigmoid(float x) { return 1.0f / (1.0f + expf(-x)); }
+float relu(float x) {
+  return x > 0.0f ? x : 0.0f;
+}
+float relu_d(float x) {
+  return x > 0.0f ? 1.0f : 0.0f;
+}
+float sigmoid(float x) {
+  return 1.0f / (1.0f + expf(-x));
+}
 
 // ============================================================
 //  Inicialización de pesos (Xavier simplificado)
@@ -83,7 +89,7 @@ float randWeight(int fan_in) {
 
 void initWeights() {
   randomSeed(42);  // Semilla fija para reproducibilidad; cámbiala si quieres variedad
-  for (int i = 0; i < INPUT_SIZE;   i++)
+  for (int i = 0; i < INPUT_SIZE; i++)
     for (int j = 0; j < HIDDEN1_SIZE; j++)
       w1[i][j] = randWeight(INPUT_SIZE);
   for (int j = 0; j < HIDDEN1_SIZE; j++) b1[j] = 0.0f;
@@ -196,13 +202,13 @@ void trainModel() {
 //  Predicción (entrada en 0–255)
 // ============================================================
 bool predictColor(int r, int g, int b) {
-  float input[3] = {r / 255.0f, g / 255.0f, b / 255.0f};
+  float input[3] = { r / 255.0f, g / 255.0f, b / 255.0f };
   forward(input);
   return a3[0] >= 0.5f;
 }
 
 float predictProb(int r, int g, int b) {
-  float input[3] = {r / 255.0f, g / 255.0f, b / 255.0f};
+  float input[3] = { r / 255.0f, g / 255.0f, b / 255.0f };
   forward(input);
   return a3[0];
 }
@@ -219,11 +225,11 @@ void evaluateModel() {
     bool real = Y[s] > 0.5f;
     if (pred == real) correct++;
     Serial.printf("  RGB(%.0f,%.0f,%.0f) → prob=%.3f  pred=%s  real=%s  %s\n",
-      X[s][0]*255, X[s][1]*255, X[s][2]*255,
-      a3[0],
-      pred ? "VERDE" : "NO",
-      real ? "VERDE" : "NO",
-      pred == real ? "✓" : "✗");
+                  X[s][0] * 255, X[s][1] * 255, X[s][2] * 255,
+                  a3[0],
+                  pred ? "VERDE" : "NO",
+                  real ? "VERDE" : "NO",
+                  pred == real ? "✓" : "✗");
   }
   Serial.printf("\nPrecisión: %d / %d (%.1f%%)\n\n", correct, N_SAMPLES,
                 100.0f * correct / N_SAMPLES);
@@ -266,6 +272,60 @@ void setup() {
   initWeights();
   trainModel();
   evaluateModel();
+
+  // 1. Imprimir w1 (INPUT_SIZE x HIDDEN1_SIZE)
+  Serial.println("--- w1 ---");
+  for (int i = 0; i < INPUT_SIZE; i++) {
+    for (int j = 0; j < HIDDEN1_SIZE; j++) {
+      Serial.print(w1[i][j]);
+      Serial.print("\t");
+    }
+    Serial.println();
+  }
+
+  // 2. Imprimir b1 (HIDDEN1_SIZE)
+  Serial.println("--- b1 ---");
+  for (int i = 0; i < HIDDEN1_SIZE; i++) {
+    Serial.print(b1[i]);
+    Serial.print("\t");
+  }
+  Serial.println();
+
+  // 3. Imprimir w2 (HIDDEN1_SIZE x HIDDEN2_SIZE)
+  Serial.println("--- w2 ---");
+  for (int i = 0; i < HIDDEN1_SIZE; i++) {
+    for (int j = 0; j < HIDDEN2_SIZE; j++) {
+      Serial.print(w2[i][j]);
+      Serial.print("\t");
+    }
+    Serial.println();
+  }
+
+  // 4. Imprimir b2 (HIDDEN2_SIZE)
+  Serial.println("--- b2 ---");
+  for (int i = 0; i < HIDDEN2_SIZE; i++) {
+    Serial.print(b2[i]);
+    Serial.print("\t");
+  }
+  Serial.println();
+
+  // 5. Imprimir w3 (HIDDEN2_SIZE x OUTPUT_SIZE)
+  Serial.println("--- w3 ---");
+  for (int i = 0; i < HIDDEN2_SIZE; i++) {
+    for (int j = 0; j < OUTPUT_SIZE; j++) {
+      Serial.print(w3[i][j]);
+      Serial.print("\t");
+    }
+    Serial.println();
+  }
+
+  // 6. Imprimir b3 (OUTPUT_SIZE)
+  Serial.println("--- b3 ---");
+  for (int i = 0; i < OUTPUT_SIZE; i++) {
+    Serial.print(b3[i]);
+    Serial.print("\t");
+  }
+  Serial.println();
 
   Serial.println("Ingresa un color como R,G,B para clasificarlo:");
   Serial.println("Ejemplo: 0,180,40");
